@@ -31,4 +31,10 @@ Create file inventory
 192.168.60.11
 ```
 
+###
+Create ansible.cfg
+```
+[defaults]
 
+inventory = inventory
+```
