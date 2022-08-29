@@ -15,14 +15,14 @@ Vagrant.configure("2") do |config|
   # Worstation
   config.vm.define "ws" do |ws|
     ws.vm.hostname = "ws"
-    ws.vm.network :private_network, ip: "192.168.60.4"
+    ws.vm.network :private_network, ip: "192.168.60.10"
   end
 
 
   # minikube
   config.vm.define "node" do |node|
     node.vm.hostname = "node"
-    node.vm.network :private_network, ip: "192.168.60.5"
+    node.vm.network :private_network, ip: "192.168.60.11"
    
     node.vm.provider "virtualbox" do |nodev|
 	nodev.memory = 4096
