@@ -18,4 +18,17 @@ $ ssh-keygen
 $ ssh-copy-id localhost
 ```
 
+###
+```
+$ ssh-copy-id node
+```
+
+###
+Create file inventory 
+
+```
+[minikube]
+192.168.60.11
+```
+
 
