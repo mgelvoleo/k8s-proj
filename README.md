@@ -53,3 +53,7 @@ Bash Command
 ansible all -m ping
 
 ```
+
+# Tips to get the info of servers
+ansible all -m gather_facts
+ansible all -m gather_facts --limit 192.168.60.11
